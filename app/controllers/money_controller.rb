@@ -18,7 +18,7 @@ class MoneyController < ApplicationController
       :currency_code => :USD,   # if nil, PayPal use USD as default
       :description   => "Gimme my money. Or else.",    # item description
       :quantity      => 1,      # item quantity
-      :amount        => 1.00   # item value
+      :amount        => 9999   # item value
     )
     response = request.setup(
       payment_request,
