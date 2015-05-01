@@ -22,8 +22,8 @@ class MoneyController < ApplicationController
     )
     response = request.setup(
       payment_request,
-      collect_path(result: 'money'),
-      collect_path(result: 'wtf'),
+      collect_path(result: 'money', only_path: false),
+      collect_path(result: 'wtf', only_path: false),
       paypal_options  # Optional
     )
 
